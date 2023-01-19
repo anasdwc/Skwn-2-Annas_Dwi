@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import HeaderAbout from "./components/HeaderAbout";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
+import Statistics from "./components/Statistics";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about">
             <HeaderAbout />
             <main>
+              <Statistics />
               <Activity text="History" />
             </main>
           </Route>
