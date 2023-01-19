@@ -37,10 +37,10 @@ function ActivityCard({ type, nominal, text, location, date, time }) {
   );
 }
 
-export default function Activity() {
+export default function Activity({ text }) {
   return (
     <section>
-      <SectionHeader text={"Activity"} />
+      <SectionHeader text={text ? text : "Activity"} />
       <div className="activity-list mx-4 my-4 flex flex-col gap-4">
         <ActivityCard type="deposit" />
         <ActivityCard type="withdraw" />
