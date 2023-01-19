@@ -46,7 +46,7 @@ export default function Statistics() {
   return (
     <section className="mb-4">
       <SectionHeader text="Statistics" />
-      <div>
+      <div className="mx-4">
         <Line options={options} data={data} />
       </div>
     </section>
